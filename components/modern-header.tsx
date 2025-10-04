@@ -3,8 +3,6 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { useTheme } from "@/components/theme-provider"
-import { Switch } from "@/components/ui/switch"
 import Image from "next/image"
 
 interface ModernHeaderProps {
@@ -14,7 +12,6 @@ interface ModernHeaderProps {
 
 export function ModernHeader({ currentPage, onPageChange }: ModernHeaderProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const { theme, toggleTheme } = useTheme()
 
   const pages = [
     { id: 1, title: "Intro", subtitle: "The Human & AI Network" },
@@ -46,13 +43,8 @@ export function ModernHeader({ currentPage, onPageChange }: ModernHeaderProps) {
               <span className="font-extrabold text-sm leading-none tracking-tight text-primary">Billions</span>
             </div>
 
-            {/* Theme toggle + Menu */}
+            {/* Menu */}
             <div className="flex items-center gap-2">
-              <div className="hidden sm:flex items-center gap-1 bg-muted/40 rounded-full px-2 py-0">
-                <span className="text-[10px] text-muted-foreground">Light</span>
-                <Switch checked={theme !== "light"} onCheckedChange={() => toggleTheme()} />
-                <span className="text-[10px] text-muted-foreground">Dark</span>
-              </div>
               <Button
                 aria-label="Open menu"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -88,17 +80,6 @@ export function ModernHeader({ currentPage, onPageChange }: ModernHeaderProps) {
                     </div>
                   </Button>
                 ))}
-                <div className="border-t pt-2 mt-2 flex items-center justify-between">
-                  <div className="text-sm font-semibold">Theme</div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-muted-foreground">Light</span>
-                    <Switch
-                      checked={theme !== "light"}
-                      onCheckedChange={() => toggleTheme()}
-                    />
-                    <span className="text-xs text-muted-foreground">Dark</span>
-                  </div>
-                </div>
               </div>
             </div>
           )}

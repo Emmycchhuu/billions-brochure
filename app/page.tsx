@@ -51,19 +51,13 @@ export default function Home() {
                   Privacy-first verification using ZK proofs. 1.9M+ users worldwide.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in-50 slide-in-from-bottom-4 duration-700 delay-800">
+                <div className="flex justify-center animate-in fade-in-50 slide-in-from-bottom-4 duration-700 delay-800">
                   <Button
                     size="lg"
                     className="rounded-full glow-hover bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105"
+                    onClick={() => window.open('https://billions.network/', '_blank')}
                   >
                     Get Verified
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="rounded-full bg-background hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white transition-all duration-300 hover:scale-105"
-                  >
-                    Learn More
                   </Button>
                 </div>
               </div>
@@ -297,7 +291,11 @@ export default function Home() {
                     sophisticated and accessible to everyone.
                   </p>
                   <div className="mt-8 flex justify-center">
-                    <Button size="lg" className="rounded-full glow-hover bg-primary hover:bg-primary/90">
+                    <Button 
+                      size="lg" 
+                      className="rounded-full glow-hover bg-primary hover:bg-primary/90"
+                      onClick={() => window.open('https://billions.network/', '_blank')}
+                    >
                       Join Our Mission
                     </Button>
                   </div>
@@ -340,9 +338,26 @@ export default function Home() {
                         </li>
                       </ul>
                       <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                        <Button className="rounded-full glow-hover bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105">
-                          Download App
-                        </Button>
+                        <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                          <Button 
+                            className="rounded-full glow-hover bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                            onClick={() => window.open('https://play.google.com/store/apps/details?id=com.billions.app.mobile&pli=1', '_blank')}
+                          >
+                            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                            </svg>
+                            Google Play
+                          </Button>
+                          <Button 
+                            className="rounded-full glow-hover bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                            onClick={() => window.open('https://apps.apple.com/es/app/billions/id6742451067', '_blank')}
+                          >
+                            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+                            </svg>
+                            App Store
+                          </Button>
+                        </div>
                         <Button
                           variant="outline"
                           className="rounded-full bg-background hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white transition-all duration-300 hover:scale-105"
@@ -398,7 +413,10 @@ export default function Home() {
                           <div className="text-xs md:text-sm text-muted-foreground">Early Users</div>
                         </div>
                       </div>
-                      <Button className="rounded-full glow-hover bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+                      <Button 
+                        className="rounded-full glow-hover bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+                        onClick={() => window.open('https://billions.network/', '_blank')}
+                      >
                         Get Early Access
                       </Button>
                     </div>
@@ -411,34 +429,30 @@ export default function Home() {
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="p-6 md:p-12 flex flex-col justify-center">
                       <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-orange-500">
-                        Korea Blockchain Week 2025
+                        Billions Network Overview
                       </h2>
                       <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6">
-                        Join us in Seoul for Korea Blockchain Week 2025. Experience the future of human and AI
-                        verification technology firsthand at one of Asia's premier blockchain events.
+                        Billions Network is building the first global verification platform for humans and AI agents, leveraging zero-knowledge proofs and mobile-first NFC scans to ensure privacy without biometrics or data storage.
                       </p>
                       <div className="space-y-2 mb-6">
                         <div className="flex items-center text-sm">
                           <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                          <span>September 22-28, 2025</span>
+                          <span>$30M raised from top VCs like Polychain and Coinbase</span>
                         </div>
                         <div className="flex items-center text-sm">
                           <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                          <span>Seoul, South Korea</span>
+                          <span>1.99M+ verified users worldwide</span>
                         </div>
                         <div className="flex items-center text-sm">
                           <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                          <span>Live Demos & Workshops</span>
+                          <span>Powered by Circom ZK tech for DeFi, NFTs, and Web3</span>
                         </div>
                       </div>
-                      <Button className="rounded-full glow-hover bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
-                        Register Now
-                      </Button>
                     </div>
                     <div className="relative min-h-[300px] lg:min-h-[400px]">
                       <Image
                         src="/loading picks/gathreing.jpg"
-                        alt="Korea Blockchain Week 2025"
+                        alt="Billions Network Innovation"
                         fill
                         className="object-cover hover:scale-110 transition-all duration-500 animate-float-slow"
                       />
@@ -483,7 +497,10 @@ export default function Home() {
                       <p className="text-muted-foreground mb-8">
                         Featured on Zero Knowledge Podcast discussing the evolution of human verification in the AI era.
                       </p>
-                      <Button className="rounded-full glow-hover bg-primary hover:bg-primary/90 w-full sm:w-auto">
+                      <Button 
+                        className="rounded-full glow-hover bg-primary hover:bg-primary/90 w-full sm:w-auto"
+                        onClick={() => window.open('https://zeroknowledge.fm/podcast/377/', '_blank')}
+                      >
                         Listen to Podcast
                       </Button>
                     </div>
@@ -497,7 +514,7 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/founder-evin-mcmullen.jpeg"
+                          src="/core/jagonzalez.jpg"
                           alt="Evin McMullen"
                           width={128}
                           height={128}
@@ -505,11 +522,10 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Evin McMullen</h3>
-                    <div className="text-primary font-semibold mb-4">Co-Founder & CEO</div>
+                    <h3 className="text-2xl font-bold mb-2">Javi.eth</h3>
+                    <div className="text-primary font-semibold mb-4">Community Lead</div>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Visionary leader with deep expertise in blockchain technology and privacy-preserving systems.
-                      Previously led identity initiatives at major Web3 companies.
+                      Leads community engagement and growth for the Network.
                     </p>
                   </CardContent>
                 </Card>
@@ -519,7 +535,7 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/founder-david-schwartz.jpeg"
+                          src="/core/Raviantan.jpg"
                           alt="David Schwartz"
                           width={128}
                           height={128}
@@ -527,11 +543,10 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">David Schwartz</h3>
-                    <div className="text-accent font-semibold mb-4">Co-Founder & CTO</div>
+                    <h3 className="text-2xl font-bold mb-2">ravidilse.eth</h3>
+                    <div className="text-accent font-semibold mb-4">Director of Growth and AI Partnerships</div>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Renowned cryptographer and distributed systems architect. Former Chief Cryptographer at Ripple,
-                      bringing unparalleled expertise in zero-knowledge proofs.
+                      Oversees expansion strategies and strategic alliances, Particularly in AI integration and crypto ecosystems.
                     </p>
                   </CardContent>
                 </Card>
@@ -541,7 +556,7 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/team-member-stylized.jpeg"
+                          src="/core/onchainron.jpg"
                           alt="Oleksandr Brezhniev"
                           width={128}
                           height={128}
@@ -549,11 +564,10 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Oleksandr Brezhniev</h3>
-                    <div className="text-orange-500 font-semibold mb-4">Co-Founder & CPO</div>
+                    <h3 className="text-2xl font-bold mb-2">Ron</h3>
+                    <div className="text-orange-500 font-semibold mb-4">Marketing Lead</div>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Product strategist with a passion for user-centric design in complex systems. Previously led
-                      product development at leading fintech companies.
+                      Drives Marketing Initiatives including content, campaigns, and brand positioning of the network.
                     </p>
                   </CardContent>
                 </Card>
@@ -672,6 +686,7 @@ export default function Home() {
                         variant="outline"
                         size="sm"
                         className="rounded-full bg-white hover:bg-accent hover:text-white w-full sm:w-auto"
+                        onClick={() => window.open('https://x.com/billions_ntwk/status/1962931186839523673', '_blank')}
                       >
                         Learn More
                       </Button>
@@ -715,10 +730,11 @@ export default function Home() {
                           </span>
                           <span className="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full">Insights</span>
                         </div>
-                        <Button
+                         <Button
                           variant="outline"
                           size="sm"
                           className="rounded-full bg-white hover:bg-accent hover:text-white"
+                          onClick={() => window.open('https://x.com/0xIntuition/status/1960681229533241598?t=', '_blank')}
                         >
                           Learn More
                         </Button>
@@ -764,6 +780,7 @@ export default function Home() {
                           variant="outline"
                           size="sm"
                           className="rounded-full bg-white hover:bg-accent hover:text-white"
+                          onClick={() => window.open('https://x.com/billions_ntwk/status/1948038015151927432', '_blank')}
                         >
                           Learn More
                         </Button>
@@ -809,6 +826,7 @@ export default function Home() {
                           variant="outline"
                           size="sm"
                           className="rounded-full bg-white hover:bg-accent hover:text-white"
+                          onClick={() => window.open('https://x.com/billions_ntwk/status/1960755097673101510', '_blank')}
                         >
                           Learn More
                         </Button>
@@ -914,55 +932,72 @@ export default function Home() {
           <div className="container mx-auto px-4 py-12 animate-in fade-in-50 slide-in-from-bottom-4 duration-700">
             <div className="max-w-6xl mx-auto space-y-16">
               <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Our Anthem</h1>
-                <p className="text-lg text-muted-foreground">Experience the vision and sound that drives our mission</p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Billions Stories</h1>
+                <p className="text-lg text-muted-foreground">Stories that capture the spirit and impact of our mission</p>
               </div>
 
-              {/* Video Section */}
-              <Card className="neumo-card gradient-blue border-0 overflow-hidden">
-                <CardContent className="p-8">
-                  <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold mb-4 text-primary">Vision Video</h2>
-                    <p className="text-muted-foreground mb-6">
-                      Watch our story unfold and discover the future we're building together
-                    </p>
-                  </div>
-
-                  <div className="relative aspect-video bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-2xl neumo-card flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
+              {/* Stories Section */}
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Story 1 */}
+                <Card className="neumo-card gradient-blue border-0 overflow-hidden hover:scale-105 transition-all duration-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                       </div>
-                      <p className="text-white/80">Video placeholder - Upload your vision video here</p>
+                      <div>
+                        <h3 className="text-xl font-bold text-primary mb-1">A Creator's Breakthrough</h3>
+                        <p className="text-sm text-accent">Sarah L., Digital Artist</p>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Audio Section */}
-              <Card className="neumo-card gradient-green border-0 overflow-hidden">
-                <CardContent className="p-8">
-                  <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold mb-4 text-accent">Anthem Audio</h2>
-                    <p className="text-muted-foreground mb-6">
-                      Listen to the sounds that inspire our journey toward a privacy-first future
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      "Billions gave me the tools to prove my work's authenticity without sharing my life story. Now, my art travels the blockchain with unbreakable trust—finally, creators like me can thrive in the AI age."
                     </p>
-                  </div>
+                  </CardContent>
+                </Card>
 
-                  <div className="relative bg-gradient-to-br from-green-500/20 to-blue-600/20 rounded-2xl neumo-card p-12 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                {/* Story 2 */}
+                <Card className="neumo-card gradient-green border-0 overflow-hidden hover:scale-105 transition-all duration-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                       </div>
-                      <p className="text-white/80">Audio placeholder - Upload your anthem audio here</p>
+                      <div>
+                        <h3 className="text-xl font-bold text-accent mb-1">Empowering Global Aid</h3>
+                        <p className="text-sm text-primary">Ahmed K., NGO Coordinator</p>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      "In regions where trust is scarce, Billions' zero-knowledge verification delivered aid directly and securely. We've reached thousands without fraud—it's not just tech, it's hope in action."
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Story 3 */}
+                <Card className="neumo-card gradient-orange border-0 overflow-hidden hover:scale-105 transition-all duration-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-orange-500 mb-1">AI Agent's First Step</h3>
+                        <p className="text-sm text-primary">Dr. Elena R., AI Researcher</p>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      "Verifying my AI agent's identity through Billions opened doors to ethical collaborations I never imagined. It's the bridge between human ingenuity and machine potential—pure magic."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
 
               {/* Call to Action */}
               <Card className="neumo-card gradient-orange border-0">
@@ -976,6 +1011,7 @@ export default function Home() {
                     <Button
                       size="lg"
                       className="rounded-full glow-hover bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition-all duration-300 hover:scale-105"
+                      onClick={() => window.open('https://billions.network/', '_blank')}
                     >
                       Get Verified Now
                     </Button>
@@ -992,8 +1028,6 @@ export default function Home() {
             </div>
           </div>
         )}
-
-        {/* Placeholder for other pages */}
       </div>
 
       <SimpleNavigation currentPage={currentPage} onPageChange={setCurrentPage} />
