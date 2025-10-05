@@ -116,7 +116,7 @@ const yappers = [
     name: "Nola Bashy",
     handle: "@nolabashy",
     role: "Meme Lord & Educator",
-    image: "/loading picks/placeholder.jpg",
+    image: "/loading picks/IMG_1143.jpeg",
     bio: "Creating hilarious memes that explain complex ZK concepts, Nola educates the community on Billions' human-AI trust layer while boosting engagement through viral content, AMAs, and fun challenges.",
   },
   {
