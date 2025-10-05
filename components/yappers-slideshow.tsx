@@ -1,4 +1,3 @@
-```jsx
 "use client"
 
 import { useState, useEffect, useRef } from "react"
@@ -110,7 +109,7 @@ const yappers = [
     name: "Dvm Onchain",
     handle: "@DvmOnchain",
     role: "Onchain Evangelist",
-    image: "/loading picks/IMG_1141.jpeg",
+    image: "/loading picks/placeholder.jpg",
     bio: "Pioneering onchain integrations for Billions, Dvm shares tutorials on NFC verification and ZK proofs, rallying developers to build privacy-preserving apps on the network and expand its verifiable identity ecosystem.",
   },
   {
@@ -124,7 +123,7 @@ const yappers = [
     name: "Israel Okon",
     handle: "@IAmisraelokon",
     role: "Ecosystem Builder",
-    image: "/loading picks/IMG_1142.jpeg",
+    image: "/loading picks/placeholder.jpg",
     bio: "Connecting Billions with emerging Web3 projects, Israel organizes hackathons and partnerships, fostering innovation in verifiable identities and expanding the network's global reach through collaborative events.",
   },
 ]
@@ -293,4 +292,3 @@ export function YappersSlideshow() {
     </div>
   )
 }
-```
