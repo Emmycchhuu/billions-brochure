@@ -110,7 +110,7 @@ const yappers = [
     name: "Dvm Onchain",
     handle: "@DvmOnchain",
     role: "Onchain Evangelist",
-    image: "/loading picks/placeholder.jpg",
+    image: "/loading picks/IMG_1141.jpeg",
     bio: "Pioneering onchain integrations for Billions, Dvm shares tutorials on NFC verification and ZK proofs, rallying developers to build privacy-preserving apps on the network and expand its verifiable identity ecosystem.",
   },
   {
