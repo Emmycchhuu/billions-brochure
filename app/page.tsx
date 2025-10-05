@@ -620,7 +620,7 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/core/anchanmi_.jpg"
+                          src="/core/Anchanmi.jpg"
                           alt="Chanmi"
                           width={128}
                           height={128}
