@@ -1,3 +1,4 @@
+```jsx
 "use client"
 
 import { useState, useEffect, useRef } from "react"
@@ -104,7 +105,28 @@ const yappers = [
     role: "Innovation Scout",
     image: "/loading picks/MIA.jpg",
     bio: "On the Billions team with DeFi research focus, MIA scouts AI trends, highlights integrations like SentientAGI, and fuels edges in human-AI verification through funding updates and event recaps.",
-  }, 
+  },
+  {
+    name: "Dvm Onchain",
+    handle: "@DvmOnchain",
+    role: "Onchain Evangelist",
+    image: "/loading picks/placeholder.jpg",
+    bio: "Pioneering onchain integrations for Billions, Dvm shares tutorials on NFC verification and ZK proofs, rallying developers to build privacy-preserving apps on the network and expand its verifiable identity ecosystem.",
+  },
+  {
+    name: "Nola Bashy",
+    handle: "@nolabashy",
+    role: "Meme Lord & Educator",
+    image: "/loading picks/placeholder.jpg",
+    bio: "Creating hilarious memes that explain complex ZK concepts, Nola educates the community on Billions' human-AI trust layer while boosting engagement through viral content, AMAs, and fun challenges.",
+  },
+  {
+    name: "Israel Okon",
+    handle: "@IAmisraelokon",
+    role: "Ecosystem Builder",
+    image: "/loading picks/placeholder.jpg",
+    bio: "Connecting Billions with emerging Web3 projects, Israel organizes hackathons and partnerships, fostering innovation in verifiable identities and expanding the network's global reach through collaborative events.",
+  },
 ]
 
 export function YappersSlideshow() {
@@ -271,3 +293,4 @@ export function YappersSlideshow() {
     </div>
   )
 }
+```
