@@ -515,7 +515,7 @@ export default function Home() {
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
                           src="/core/jagonzalez.jpg"
-                          alt="Evin McMullen"
+                          alt="Javi Gonzalez"
                           width={128}
                           height={128}
                           className="w-full h-full object-cover"
@@ -536,7 +536,7 @@ export default function Home() {
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
                           src="/core/Raviantan.jpg"
-                          alt="David Schwartz"
+                          alt="Ravi Kant Agrawal"
                           width={128}
                           height={128}
                           className="w-full h-full object-cover"
@@ -557,7 +557,7 @@ export default function Home() {
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
                           src="/core/onchainron.jpg"
-                          alt="Oleksandr Brezhniev"
+                          alt="Ron"
                           width={128}
                           height={128}
                           className="w-full h-full object-cover"
@@ -568,6 +568,69 @@ export default function Home() {
                     <div className="text-orange-500 font-semibold mb-4">Marketing Lead</div>
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       Drives Marketing Initiatives including content, campaigns, and brand positioning of the network.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="neumo-card gradient-blue border-0 card-hover">
+                  <CardContent className="p-8 text-center">
+                    <div className="mb-6">
+                      <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
+                        <Image
+                          src="/core/0xalexdigital.jpg"
+                          alt="Alex Digital"
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">0xAlexDigital</h3>
+                    <div className="text-primary font-semibold mb-4">CMO</div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Oversees marketing strategies and brand growth for Billions Network, driving global adoption and community engagement.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="neumo-card gradient-green border-0 card-hover">
+                  <CardContent className="p-8 text-center">
+                    <div className="mb-6">
+                      <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
+                        <Image
+                          src="/core/kryptojogi.jpg"
+                          alt="Joana"
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">kryptojogi</h3>
+                    <div className="text-accent font-semibold mb-4">Business Development Lead</div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Drives partnerships and ecosystem expansion, forging key alliances to accelerate Billions' growth in Web3 and AI sectors.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="neumo-card gradient-orange border-0 card-hover">
+                  <CardContent className="p-8 text-center">
+                    <div className="mb-6">
+                      <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
+                        <Image
+                          src="/core/anchanmi_.jpg"
+                          alt="Chanmi"
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">anchanmi_</h3>
+                    <div className="text-orange-500 font-semibold mb-4">Designer</div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Leads visual design and user experience enhancements, creating intuitive interfaces that make privacy-first verification seamless and engaging.
                     </p>
                   </CardContent>
                 </Card>
