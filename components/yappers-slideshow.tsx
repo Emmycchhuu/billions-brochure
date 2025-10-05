@@ -123,7 +123,7 @@ const yappers = [
     name: "Israel Okon",
     handle: "@IAmisraelokon",
     role: "Ecosystem Builder",
-    image: "/loading picks/placeholder.jpg",
+    image: "/loading picks/IMG_1142.jpeg",
     bio: "Connecting Billions with emerging Web3 projects, Israel organizes hackathons and partnerships, fostering innovation in verifiable identities and expanding the network's global reach through collaborative events.",
   },
 ]
