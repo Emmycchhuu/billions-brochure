@@ -577,7 +577,7 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/core/0xalexdigital.jpg"
+                          src="/core/alexdigital.jpg"
                           alt="Alex Digital"
                           width={128}
                           height={128}
@@ -598,7 +598,8 @@ export default function Home() {
                     <div className="mb-6">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden neumo-card">
                         <Image
-                          src="/core/kryptojogi.jpg"
+                          src="/core
+/IMG_1139.jpeg."
                           alt="Joana"
                           width={128}
                           height={128}
